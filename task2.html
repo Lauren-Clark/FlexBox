@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox: Task 2</title>
+
+
+    <style>
+       /* nav bar styling */
+
+      /* task 1 nav */
+
+      html {background: no-repeat linear-gradient(to bottom left, black 50%, #E26214 50%);}
+
+       .navbar ul {
+          max-width: 1000px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* new */
+          display: flex;
+          flex-direction: row; 
+          justify-content: space-between;
+        }
+
+        .navbar nav {display: flex;
+           flex-direction: row; 
+          justify-content: space-between;
+        }
+
+       .navbar li {display: flex;
+           flex-direction: row; 
+          justify-content: space-between;
+          /* margin-right makes everything evenly spaced apart */
+          margin-right: 50px;
+          background-color: #E26214;
+        }
+
+        /* nav a {flex: 50px;
+        } */
+
+         nav a:link,
+         nav a:visited {
+          background-color: #E26214;
+         /* border: 2px solid #77A6B6; */
+          border-radius: .5em;
+          color: #000;
+          padding: 0;
+          display: inline-block;
+          text-decoration: none;
+          justify-content: space-between;
+        }
+
+        /* task 2 styling */
+
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+            padding-left: 500px;
+            background: no-repeat linear-gradient(to bottom left, black 25%, #E26214 50%);
+        }
+
+        ul {
+          max-width: 700px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* makes 3 columns for the li children */
+          display: flex; 
+        
+        }
+
+        li {
+          background-color: #000;
+          border: 2px solid #F88A46;
+          border-radius: .5em;
+          color: #fff;
+          padding: .5em;
+          /* added flex: 1 200px; */
+          flex: 1 200px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+<!-- task 1 nav -->
+    <div class="navbar">
+      <nav>
+      <ul>
+        <li><a href="task1.html">Flex Layout 1</a></li>
+        <li><a href="task2.html">Flex Layout 2</a></li>
+        <li><a href="task3.html">Flex Layout 3</a></li>
+        <li><a href="task4.html">Flex Layout 4</a></li>
+      </ul>
+   </nav>
+   </div><!-- end of nav-bar div-->
+    
+<br><br>
+  <ul>
+    <li>I am small</li>
+    <li>I have more content than the very small item.</li>
+
+    <li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
+  </ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

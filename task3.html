@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox: Task 3</title>
+
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+            padding-left: 500px;
+           background: no-repeat linear-gradient(to bottom left, black 25%, #E26214 60%);
+        }
+
+        .parent {
+          border: 2px solid #F88A46;
+          border-radius: .5em;
+          width: 400px;
+          height: 300px;
+          /* new - flex allows flex property and align-items center makes center vertically 
+          and justify content centers horizontally */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .child {
+          background-color: #000; 
+          color: #E26214;
+          padding: .5em;
+          width: 150px;
+          text-align: center;
+          border: 2px dotted #F88A46;
+        }
+
+              /* task 1 nav */
+
+        nav ul {
+          max-width: 700px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* new */
+          display: flex;
+
+        }
+
+       nav ul {display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        nav a {flex: 75px;
+        } 
+
+        nav a:link,
+        nav a:visited {
+          background-color: #E26214;
+          border: 2px solid #F88A46;
+          border-radius: .5em;
+          color: #000;
+          padding: .5em;
+          display: inline-block;
+          text-decoration: none;
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+   <nav>
+      <ul>
+        <li><a href="task1.html">Flex Layout 1</a></li>
+        <li><a href="task2.html">Flex Layout 2</a></li>
+        <li><a href="task3.html">Flex Layout 3</a></li>
+        <li><a href="task4.html">Flex Layout 4</a></li>
+      </ul>
+    </nav>
+<br><br>
+  <div class="parent">
+    <div class="child">Center me.</div>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

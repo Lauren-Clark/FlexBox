@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox: Task 4</title>
+
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+            padding-left: 500px;
+            background: no-repeat linear-gradient(to bottom left, black 60%, #E26214 35%);
+        }
+
+        ul {
+          width: 450px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* new */
+          display: flex;
+          align-items: center;
+        }
+
+        li {
+          background-color: #E26214;
+          border: 2px solid #F88A46;
+          border-radius: .5em;
+          color: #000;
+          padding: .5em;
+          margin: .5em;
+          /* if want to change BG color 
+          background-color: pink; */
+        }
+ 
+       #box {
+        display: flex;
+        flex-wrap: wrap;
+
+        }
+
+        #box>* {
+        flex: 100px;
+       /* background-color: #000; */
+
+        }
+  
+      /* task 1 nav */
+
+       .navbar ul {
+          max-width: 1000px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* new */
+          display: flex;
+          flex-direction: row; 
+          justify-content: space-between;
+        }
+
+       .navbar li {display: flex;
+           flex-direction: row; 
+          justify-content: space-between;
+          /* margin-right makes everything evenly spaced apart */
+          margin-right: 50px;
+          /* if want to change BG color */
+          background-color: #E26214; 
+
+        }
+
+         nav a:link,
+         nav a:visited {
+          background-color: #E26214;
+         /* border: 2px solid #77A6B6; */
+          border-radius: .5em;
+          color: #000;
+          padding: 0;
+          display: inline-block;
+          text-decoration: none;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          /* need the width to be large enough for buttons */
+          width: 120px;
+          /* if want to change BG color 
+          background-color: green; */
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- task 1 nav -->
+    <div class="navbar">
+      <nav>
+      <ul>
+        <li><a href="task1.html">Flex Layout 1</a></li>
+        <li><a href="task2.html">Flex Layout 2</a></li>
+        <li><a href="task3.html">Flex Layout 3</a></li>
+        <li><a href="task4.html">Flex Layout 4</a></li>
+      </ul>
+    </nav>
+</div><!-- end of navbar div -->
+
+<br><br>
+  <ul>
+    <div id="box">
+    <div><li>Turnip</li></div>         <!-- 1 stays r1c1 -->
+    <div><li>greens</li></div>        <!-- 2 becomes r1c2-->
+    <div><li>yarrow</li></div>         <!-- 3 becomes r1c3 -->
+    
+    <div><li>ricebean</li></div>       <!-- 4  becomes r1c4-->
+    <div><li>rutabaga</li></div>       <!-- 5 becomes r2c1-->
+    <div><li>endive</li></div>         <!-- 6 becomes r2c2-->
+    <div><li>cauliflower</li></div>    <!-- 7 becomes r2c3-->
+    
+    <div><li>sea lettuce</li></div>    <!-- 8 becomes r3c1-->
+    <div><li>kohlrabi</li></div>       <!-- 9 -->
+    <div><li>amaranth</li></div>       <!-- 10 -->
+    </div>
+  </ul>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
