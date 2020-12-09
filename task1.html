@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox: Task 1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+     <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+
+        html {background: no-repeat linear-gradient(to bottom left, black 50%, #E26214 50%);}
+
+        body {
+           /* background-color: #000; */
+            color: #000;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+            padding-left: 500px;
+
+        }
+
+     .project nav ul {
+          max-width: 700px;
+          list-style:none;
+          padding: 0;
+          margin: 0;
+          /* new */
+          display: flex;
+
+        }
+
+        /* nav li {
+          flex: 1;
+        }
+        */
+
+       .project  nav ul {display: flex;
+            flex-direction: row; 
+            /* justify-content is important because it gives equal spacing */
+            justify-content: space-between;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 50px;
+        }
+
+      .project  ul {
+          text-align: center;
+        }
+
+        /* .center nav ul {text-align: center;
+          padding-right: 200px;
+          padding-left: 450px;
+        } */
+
+        .project nav a {flex: 75px;
+        }
+
+
+      .project  nav a:link,
+      .project  nav a:visited {
+          background-color: #E26214;
+          border: 2px solid #F88A46;
+          border-radius: .5em;
+          color: #000;
+          padding: .5em;
+          display: inline-block;
+          text-decoration: none;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+  <!----------------------------------- NAV BAR ------------------>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top text">
+  <a class="navbar-brand text-justify" href="https://lauren-clark.github.io/Portfolio/" >Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/">Project 1 </span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3 <span class="sr-only">(current)</span></a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Media-Query/">Project 5</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Vacation-Website/">Project 6</a>
+      </li>
+            <li class="nav-item active">
+        <a class="nav-link" href="https://lauren-clark.github.io/FlexBox/">Project 7</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/FlexBoxLandingPage/">Project 8</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/Bootstrap/">Project 10</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="https://lauren-clark.github.io/OnlineResume/">Project 11</a>
+      </li>
+    </ul>
+        
+    </ul>
+    <span class="navbar-text">
+      Click to view!
+    </span>
+  </div>
+</nav>
+
+  <div class="center">
+  <div class="project">
+<nav>
+      <ul>
+        <li><a href="task1.html">Flex Layout 1</a></li>
+        <li><a href="task2.html">Flex Layout 2</a></li>
+        <li><a href="task3.html">Flex Layout 3</a></li>
+        <li><a href="task4.html">Flex Layout 4</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+ <!-- scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
