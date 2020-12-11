@@ -1,57 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+     <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
     <title>Flexbox: Task 2</title>
 
 
     <style>
-       /* nav bar styling */
+        html {background: no-repeat linear-gradient(to bottom left, black 50%, #E26214 50%);}
 
-      /* task 1 nav */
+        body {
+            background-color: #000;
+            color: #000;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+            
+        }
 
-      html {background: no-repeat linear-gradient(to bottom left, black 50%, #E26214 50%);}
+  @media (min-width:320px) {
 
-       .navbar ul {
-          max-width: 1000px;
+     .project nav ul {
+          max-width: 100%;
           list-style:none;
           padding: 0;
           margin: 0;
           /* new */
           display: flex;
-          flex-direction: row; 
-          justify-content: space-between;
+
         }
 
-        .navbar nav {display: flex;
-           flex-direction: row; 
-          justify-content: space-between;
+        /* nav li {
+          flex: 1;
+        }
+        */
+
+       .project nav ul {display: flex;
+            flex-direction: row; 
+            /* justify-content is important because it gives equal spacing */
+            justify-content: space-between;
+            padding-left: 5px;
+            margin-top: 50px;
         }
 
-       .navbar li {display: flex;
-           flex-direction: row; 
-          justify-content: space-between;
-          /* margin-right makes everything evenly spaced apart */
-          margin-right: 50px;
-          background-color: #E26214;
+
+      .project ul {
+          text-align: center;
+
         }
 
-        /* nav a {flex: 50px;
+        /* .center nav ul {text-align: center;
+          padding-right: 200px;
+          padding-left: 450px;
         } */
 
-         nav a:link,
-         nav a:visited {
+        .project nav a {flex: 200px;
+                padding-right: -2000px;
+        }
+      }
+
+
+      .project  nav a:link,
+      .project  nav a:visited {
           background-color: #E26214;
-         /* border: 2px solid #77A6B6; */
+          border: 2px solid #F88A46;
           border-radius: .5em;
-          color: #F88A46;
-          padding: 0;
+          color: #000;
+          padding: .5em;
           display: inline-block;
           text-decoration: none;
-          justify-content: space-between;
         }
+}
 
         /* task 2 styling */
 
@@ -65,7 +97,9 @@
             background: no-repeat linear-gradient(to bottom left, black 25%, #E26214 50%);
         }
 
-        ul {
+
+       .task2 ul {
+        color: #000;
           max-width: 700px;
           list-style:none;
           padding: 0;
@@ -75,11 +109,11 @@
         
         }
 
-        li {
+       .task2 li {
           background-color: #000;
           border: 2px solid #F88A46;
           border-radius: .5em;
-          color: #fff;
+          color: #FFF;
           padding: .5em;
           /* added flex: 1 200px; */
           flex: 1 200px;
@@ -93,25 +127,64 @@
 
 <body>
 
+  <!----------------------------------- NAV BAR ------------------>
+
+  <div class="container">
+    <!-- row 1 -->
+    <!-- for mobile this makes the nav bar have a drop down -->
+
+
+
+<div class="btn-group pull-right">
+  <button type="button" class="btn btn-primary">Portfolio</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="https://lauren-clark.github.io/">Project 1</a></li>
+    <li><a href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2</a></li>
+    <li><a href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3</a></li>
+    <li><a href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4</a></li>
+    <li><a href="https://lauren-clark.github.io/Media-Query/">Project 5</a></li>
+    <li><a href="https://lauren-clark.github.io/Vacation-Website/">Project 6</a></li>
+    <li><a href="https://lauren-clark.github.io/FlexBox/">Project 7</a></li>
+    <li><a href="https://lauren-clark.github.io/FlexBoxLandingPage/">Project 8</a></li>
+    <li><a href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9</a></li>
+    <li><a href="https://lauren-clark.github.io/Bootstrap/">Project 10</a></li>
+    <li><a href="https://lauren-clark.github.io/OnlineResume/">Project 11</a></li>
+  </ul>
+</div> 
+</div>
+
+
+
+
 <!-- task 1 nav -->
-    <div class="navbar">
+     <div class="center">
+  <div class="project">
+      <div class="navbar">
+      
       <nav>
       <ul>
-        <li><a href="index.html">Flex Layout 1</a></li>
+        <li><a href="task1.html">Flex Layout 1</a></li>
         <li><a href="task2.html">Flex Layout 2</a></li>
         <li><a href="task3.html">Flex Layout 3</a></li>
         <li><a href="task4.html">Flex Layout 4</a></li>
       </ul>
    </nav>
    </div><!-- end of nav-bar div-->
+ </div>
     
 <br><br>
+<div class="task2">
   <ul>
     <li>I am small</li>
     <li>I have more content than the very small item.</li>
 
     <li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
   </ul>
+</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
